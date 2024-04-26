@@ -1,4 +1,14 @@
-"use strict"
+const x = 5;
+const y = 2;
+const z = 5;
 
-const message = prompt("do you agree with the terms?");
-console.log(message)
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+
+
+
+const b = 'hello'
+console.log(namber(b))

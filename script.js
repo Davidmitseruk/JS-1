@@ -24,6 +24,25 @@ console.log(Math.ceil(1.3));
 console.log(Math.round(1.4));
 console.log(Math.round(99.6));
 console.log(Math.max(15, 100, 25, 48, 152, 14));
-console.log(Math.min(25, 3.5, 69, 26))
-console.log(Math.pow(2, 4))
-console.log(Math.random() * (10 - 1) + 1)
+console.log(Math.min(25, 3.5, 69, 26));
+console.log(Math.pow(2, 4));
+console.log(Math.random() * (10 - 1) + 1);
+
+const a = ('welcome to bahamas!');
+console.log(a.startsWith('w'));
+console.log(a.endsWith('s'));
+
+console.log(a.padEnd(22, "!" ));
+console.log(a.padStart(20, "!" ));
+
+const s = '   hello    ';
+console.log(s.trim());
+
+const name = 'David';
+const age = 13;
+
+const message = `my name is ${name},and i am ${age} years old`
+console.log(message)
+// const message = 'My name is' + ' ' + name + ' ' +'i am' + ' ' + age + 'years old.';
+// console.log(message);
+

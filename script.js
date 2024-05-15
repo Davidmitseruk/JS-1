@@ -100,3 +100,49 @@
 // }
 // console.log(cost)
 
+// let cost;
+// const sub = 'premium';
+// switch (sub){
+ //    case 'free' :
+ //        cost - 0;
+ //        break;
+ //    case 'pro':
+ //        cost = 50;
+ //        break;
+  //   case 'premium': 
+ //       cost = 200;
+  //       break   
+ //    default :
+ //        console.log('answer not right');
+// }
+// console.log(cost)
+// 
+// if (a === 0) {
+//     p.textContent = 0;
+//     }
+//     if (a === 1) {
+//     p.textContent = 1;
+ //    }
+    
+    
+//     if (a === 2 || a === 3) {
+ //    p.textContent = '2,3';
+//     }
+
+// let a = parseInt(prompt('enter number'));
+// let letter;
+// switch (a){
+//     case 0 :
+ //        letter = 0;
+ //        break;
+ //    case 1 :
+ //        letter = 1;
+ //        break;
+  //   case 2:
+ //    case 3 :
+ //        letter = 2,3;
+ //        break;
+ //    default :
+ //   console.log('wrong');                
+// }
+ //console.log(a)

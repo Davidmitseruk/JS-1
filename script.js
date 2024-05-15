@@ -83,19 +83,20 @@
  //    cost = 0;
 // }
 
-let cost;
-const sub = 'premium';
+// let cost;
+// const sub = 'premium';
 
-if (sub === 'normal'){
-    cost = 0
-}
-else if(sub === 'pro'){
-    cost = 100
-}
-else if (sub === 'premium'){
-    cost = 200
-}
-else {
-    console.log('fail')
-}
-console.log(cost)
+// if (sub === 'normal'){
+//    cost = 0
+// }
+// else if(sub === 'pro'){
+//     cost = 100
+// }
+// else if (sub === 'premium'){
+ //    cost = 200
+// }
+// else {
+//    console.log('fail')
+// }
+// console.log(cost)
+

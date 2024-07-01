@@ -53,3 +53,7 @@ console.log(navn.shift())
 
 navn.unshift('Bogdan');
 console.log(navn);
+
+const nammes = ['bob', 'Anna', 'Alex', 'Nick', 'Nika'];
+const newnammes = names.splice(0, 3);
+console.log(names)

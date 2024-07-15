@@ -34,10 +34,10 @@
  //    }
 // }
 
-const sum = 10;
-for (let i = 0; 1 < sum; 1 +=1){
-    if( i % 2 === 0){
-        continue;
-    }
-    console.log('Something:', i);
-}
+// const sum = 10;
+// for (let i = 0; 1 < sum; 1 +=1){
+//     if( i % 2 === 0){
+//         continue;
+//     }
+//     console.log('Something:', i);
+// }

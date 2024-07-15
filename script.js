@@ -146,3 +146,58 @@
  //   console.log('wrong');                
 // }
  //console.log(a)
+
+ // const user = {
+//     name: 'Bob',
+//     age: 15,
+//     class: 10,
+// }
+
+// for ( const key in user){
+ //    console.log('keys: ', key);
+// }
+// for ( const key in user){
+//     console.log('meaning ', user[key]);
+// }
+
+// const keys = Object.keys(user)
+// console.log(keys);
+
+// const values = Object.values(user);
+// console.log(values);
+
+// const entries = Object.entries(user);
+// console.log(entries);
+
+// const hotel = {
+// //     name: 'hillton',
+ //    stars: 5,
+ //    capacity: 250,
+
+// }
+// const keys = Object.keys(hotel);
+// console.log(keys);
+// for (const key of keys){
+//     console.log('Value: ', hotel[key]);
+// }
+
+// const entries = Object.entries(hotel)
+
+// for(const entry of entries){
+//     const key = entry[0];
+//     const value = entry[1];
+//     console.log(`${key}: ${value}`);
+// }
+
+const goods = {
+    apples: 7,
+    Orange: 10,
+    Kiwi: 4,
+    greape: 8,
+}
+const values = Object.values(goods);
+let total = 0;
+for (const value of values){
+    total += value;
+}
+console.log(total);

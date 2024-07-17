@@ -189,15 +189,37 @@
 //     console.log(`${key}: ${value}`);
 // }
 
-const goods = {
-    apples: 7,
-    Orange: 10,
-    Kiwi: 4,
-    greape: 8,
-}
-const values = Object.values(goods);
-let total = 0;
-for (const value of values){
-    total += value;
-}
-console.log(total);
+
+// const string = 'Hello, my friends';
+// console.log(string.split(' '));
+
+// const names = ['Alex', 'David', 'Nika', 'Bob', 'Yana'];
+// console.log(names.join(' '));
+
+// const navne = ['Alex', 'David', 'Nika', 'Bob', 'Yana'];
+// console.log(navne.indexOf('Bob'));
+
+// const navne = ['Alex', 'David', 'Nika', 'Bob', 'Yana'];
+// console.log(navne.includes('David'))
+
+// const nammes = ['bob', 'Anna', 'Alex', 'Nick', 'Nika'];
+// const newnammes = nammes.splice(0, 3);
+// console.log(nammes)
+
+// const sum = function (a, b, c){
+//     return a + b + c;
+// }
+
+// const add = (a, b, c) => a + b + c;
+// const add1 = ( a, b, c) =>{
+//     return a + b + c;
+// }
+
+// const a = x => {
+//     return x + 5
+// }
+
+
+// const b = () => {
+//     console.log('hello!')
+// }

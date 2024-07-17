@@ -58,8 +58,11 @@
 // const newnammes = names.splice(0, 3);
 // console.log(names)
 
-// const add = (...arg) => {
-//    console.log(arg)
-// }
-// add(1, 2, 3, 4, 5);
+
+
+
+const add = (...arg) => {
+   console.log(arg)
+}
+add(1, 2, 3, 4, 5); 
 

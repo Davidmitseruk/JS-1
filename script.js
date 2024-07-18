@@ -223,3 +223,8 @@
 // const b = () => {
 //     console.log('hello!')
 // }
+
+const user = {
+    name: 'bob',
+}
+   

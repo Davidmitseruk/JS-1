@@ -118,10 +118,10 @@
 // const duoble = numbers.map(num => num * 2)
 // console.log(duoble);
 
-const users = [
-   {name: 'Bob', age: 17},
-   {name: 'Nick', age: 27},
-   {name: 'Alex', age: 47},
-]
-const names = users.map(user => user.name);
-console.log(names) // ['Bob', 'Nick', 'Alex']
+// const users = [
+//    {name: 'Bob', age: 17},
+//    {name: 'Nick', age: 27},
+//    {name: 'Alex', age: 47},
+// ]
+// const names = users.map(user => user.name);
+// console.log(names) // ['Bob', 'Nick', 'Alex']

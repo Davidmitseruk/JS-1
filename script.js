@@ -224,7 +224,77 @@
 //     console.log('hello!')
 // }
 
-const user = {
-    name: 'bob',
-}
+// const user = {
+//     name: 'bob',  
+// }
    
+
+// filter
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(numbers.filter(num => num < 5));
+// console.log(numbers.filter(num => num > 5));
+// console.log(numbers.filter(num => num === 5));
+
+// const users = [
+//     {name: 'alex', isActive: true},
+//     {name: 'Bob', isActive: false},
+//     {name: 'nick', isActive: true},
+//     {name: 'anna', isActive: true},
+//     {name: 'dilan', isActive: false},
+// ];
+// const userActive = users.filter(user => user.isActive);
+// console.log(userActive);
+
+// const userNotActive = users.filter(user => !user.isActive);
+// console.log(userNotActive);
+
+
+// find
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(numbers.find (num => num > 6));
+
+// const users = [
+// {name: 'alex', isActive: true, id: '1'},
+// {name: 'Bob', isActive: false, id: '2'},
+// {name: 'nick', isActive: true, id: '3'},
+// {name: 'anna', isActive: true, id: '4'},
+// {name: 'dilan', isActive: false, id: '5'},
+//  ];
+//  console.log(users.find(user => user.id === "3"));
+
+// every
+
+//const numbers = val => val >= 15; 
+//console.log([20, 135, 96, 10, 88, 74, 64].every(numbers)); // false
+//console.log([20, 135, 96, 100, 88, 74, 64].every(numbers)); //true
+//console.log([1, 10, 8, 12, 6, 9, 5].some(numbers)); // false   
+//console.log([17, 10, 8, 12, 6, 9, 5].some(numbers));// true
+
+//const fruits = [
+//    {name: 'orange', amount: 40},
+//    {name: 'kiwi', amount: 100},
+//    {name: 'apple', amount: 48},
+//    {name: 'banana', amount: 0},
+//]
+//console.log(fruits.every(fruit => fruits.amount > 0));
+//console.log(fruits.some(fruit => fruits.amount > 0));
+
+
+const players = [
+    { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+    { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+    { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+    { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+    { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+    ];
+
+console.log(players.map(player => {
+    return player.name;
+}))
+
+console.log(players.filter(player => player.online));
+
+console.log(players.filter(player => player.timePlayed > 250));
+
+console.log(players.find(player => player.id === "player-3"));

@@ -281,20 +281,68 @@
 //console.log(fruits.some(fruit => fruits.amount > 0));
 
 
-const players = [
-    { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
-    { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
-    { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
-    { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
-    { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
-    ];
+//const players = [
+//    { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+//    { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+//    { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+//    { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+//    { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+//    ];
 
-console.log(players.map(player => {
-    return player.name;
-}))
+//console.log(players.map(player => {
+//    return player.name;
+//}))
 
-console.log(players.filter(player => player.online));
+//console.log(players.filter(player => player.online));
 
-console.log(players.filter(player => player.timePlayed > 250));
+//console.log(players.filter(player => player.timePlayed > 250));
 
-console.log(players.find(player => player.id === "player-3"));
+//console.log(players.find(player => player.id === "player-3"));
+
+// CALLBACK (EXTRA)
+
+
+const callback =() => console.log('Hello');
+// ...
+function fun(callback){
+    // ...
+    callback();
+}
+fun(callback); // Hello
+
+const numbers = [11, 24, 31, 14, 51, 36, 27, 8, 9];
+const cost = numbers.map(function(number){
+    return number * 1.6;
+})
+console.log(cost);
+
+function allElements(arr, callback){
+    for (let i = 0; i < arr.length; i++){
+        if(!callback(arr[i])){
+            return false;
+        }
+    }
+    return true
+}
+
+const allEven = allElements([2, 4, 6, 8, 10], function(element){
+    return element % 2 === 0;
+})
+console.log(allEven); // true
+
+
+function filter(arr, callback){
+    const result = [];
+    for(let i = 0; i < arr.length; i++){
+        if(callback(arr[i])){
+            result.push(arr[i]);
+        }
+    }
+    return result;
+
+
+}
+const nummers = filterArray([3, 17, 15, 25, 88, 98, ,23], function ( element){
+    return element % 2 === 1;
+});
+console.log(nummers);

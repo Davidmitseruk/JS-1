@@ -302,47 +302,96 @@
 // CALLBACK (EXTRA)
 
 
-const callback =() => console.log('Hello');
+// const callback =() => console.log('Hello');
 // ...
-function fun(callback){
+// function fun(callback){
     // ...
-    callback();
-}
-fun(callback); // Hello
+//     callback();
+// }
+// fun(callback); // Hello
 
-const numbers = [11, 24, 31, 14, 51, 36, 27, 8, 9];
-const cost = numbers.map(function(number){
-    return number * 1.6;
-})
-console.log(cost);
+// const numbers = [11, 24, 31, 14, 51, 36, 27, 8, 9];
+// const cost = numbers.map(function(number){
+//     return number * 1.6;
+// })
+// console.log(cost);
 
-function allElements(arr, callback){
-    for (let i = 0; i < arr.length; i++){
-        if(!callback(arr[i])){
-            return false;
+// function allElements(arr, callback){
+ //    for (let i = 0; i < arr.length; i++){
+//         if(!callback(arr[i])){
+//             return false;
+ //        }
+ //    }
+ //  return true
+ // }
+
+ // const allEven = allElements([2, 4, 6, 8, 10], function(element){
+  //    return element % 2 === 0;
+ // })
+ // console.log(allEven); // true
+
+
+ // function filter(arr, callback){
+  //    const result = [];
+  //    for(let i = 0; i < arr.length; i++){
+  //        if(callback(arr[i])){
+  //            result.push(arr[i]);
+  //       }
+  //   }
+  //    return result;
+
+
+ // }
+ // const nummers = filterArray([3, 17, 15, 25, 88, 98, ,23], function ( element){
+ //     return element % 2 === 1;
+ // });
+ // console.log(nummers);
+
+ const numbers = [17, 52, 65, 41, 12, 9];
+ const sum = numbers.reduce((acc, value)=> acc + value, 0);
+ console.log(sum); 
+
+ const tweets = [
+    {id: '012', likes: 23, tags: ['css', 'sass']},
+    {id: '017', likes: 33, tags: ['js', 'javascript']},
+    {id: '018', likes: 87, tags: ['css', 'html']},
+    {id: '011', likes: 47, tags: ['react', 'js']},
+    {id: '019', likes: 98, tags: ['nodejs', 'js']},
+ ]
+  //const likes = tweets.reduce((totallikes, tweet)  => totallikes + tweet.likes, 0)
+  //console.log(likes)
+
+
+  //const like = tweets => tweets.reduce((totalLikes, tweet) => totalLikes + tweet.likes, 0);
+  //console.log(like(tweets));
+
+  //const tags = tweets.reduce((alltags, tweet) => {
+  //  alltags.push(...tweet.tags)
+  //  return alltags;
+  //}, []);
+  //console.log(tags)
+
+  const tagsSum = tweets =>tweets.reduce((alltags, tweet) => {
+    alltags.push(...tweet.tags)
+      return alltags;
+    }, []);
+    const tags = tagsSum(tweets);
+    const tgasCount = (acc, tag) => {
+        if(!acc.hasOwnProperty(tag)){
+            acc[tag] = 0;
+
         }
-    }
-    return true
-}
-
-const allEven = allElements([2, 4, 6, 8, 10], function(element){
-    return element % 2 === 0;
-})
-console.log(allEven); // true
+        acc[tag] += 1;
+        return acc;
+    };
+    const totalTags = tags => tags.reduce(tgasCount, {});
+    const tagcount = totalTags(tags);
+    console.log(tagcount);
 
 
-function filter(arr, callback){
-    const result = [];
-    for(let i = 0; i < arr.length; i++){
-        if(callback(arr[i])){
-            result.push(arr[i]);
-        }
-    }
-    return result;
+    const nummer = [5, 6, 1, 3, 4, 2];
+    console.log(nummer.sort());
 
-
-}
-const nummers = filterArray([3, 17, 15, 25, 88, 98, ,23], function ( element){
-    return element % 2 === 1;
-});
-console.log(nummers);
+    const names = ['Alex', 'Nick', 'Bob', 'Jhon'];
+    console.log(names.sort());
+    

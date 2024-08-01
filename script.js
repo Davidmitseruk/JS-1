@@ -507,10 +507,86 @@
 //  console.log(key)
 //}
 
-const animal = {
-     eats: true,
+//const animal = {
+//     eats: true,
+// }
+//const dog = Object.create(animal);
+////dog.barks = true;
+//const keysDog = Object.keys(dog);
+//console.log(keysDog);
+
+//class User {
+//  #mail;
+ //// constructor({name, age, mail}){
+ //   this.name = name;
+ //   this.age = age;
+ //   this.#mail = mail;
+ // }
+//  getMail(){
+//    return this.#mail;
+//  }
+//  changeMail(newMail){
+ //   return this.#mail = newMail;
+//  }
+//}
+//const a = new User('David', '13');
+//console.log(a);
+//const b = new User('Alfredo di stefano', '93');
+//console.log(b);
+
+//const a = new User({
+//  name: 'Bob',
+//  age: '22',
+//  mail: 'David@gmail.com',
+//})
+//a.changeMail('newDavid@gmail.com')
+//console.log(a.getMail());
+
+
+
+//const b = new User({
+//  name: 'David',
+//  age: '13',
+//})
+//console.log(b); 
+//const c = new User({
+//  name: 'Alfredo di stefano',
+//  age: '93',
+//})
+//console.log(c); 
+
+class User{
+  static Roles = {
+    ADMIN: 'admin',
+    USER: 'user',
   }
-const dog = Object.create(animal);
-dog.barks = true;
-const keysDog = Object.keys(dog);
-console.log(keysDog);
+  #role
+  #mail
+  constructor({name, age, mail, role}){
+    this.name = name;
+    this.age = age;
+    this.#mail = mail;
+    this.role = role;
+  }
+  get role(){
+    return this.#role;
+  }
+  set role(newrole){
+    if(newrole === ""){
+      console.log("Error")
+      return;
+    }
+    this.#mail = newrole
+  }
+ 
+}
+
+const c = new User({
+  mail: 'newDavid@gmail.com',
+  role: User.Roles.ADMIN,
+});
+console.log(c.Roles);
+console.log(User.Roles);
+console.log(c.Roles);
+c.role = User.Roles.USER;
+console.log(c.role);

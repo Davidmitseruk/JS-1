@@ -445,20 +445,72 @@
 
 
 
-const arr = [
-{ name: 'John', age: 32 },
-{ name: 'Jane', age: 26 },
-{ name: 'Mike', age: 42 },
-{ name: 'Emily', age: 29 }
-];
+//const arr = [
+//{ name: 'John', age: 32 },
+//{ name: 'Jane', age: 26 },
+//{ name: 'Mike', age: 42 },
+//{ name: 'Emily', age: 29 }
+//];
 
-arr.sort((a, b) => {
-  if(a.name < b.name){
-    return -1;
+//arr.sort((a, b) => {
+//  if(a.name < b.name){
+//    return -1;
+//  }
+//  if( a.name > b.name){
+//    return 1;
+//  }
+//  return 0;
+//})
+//console.log(arr);
+
+
+
+
+//////////////// OOP
+
+//const baseSalary = 20000;
+//const overtime = 15;
+//const rate = 20;
+//const getWage =(baseSalary, overtime,  rate) => {
+//  return baseSalary + overtime * rate;
+//}
+//getWage(baseSalary, overtime, rate);
+
+
+//const employee = {
+//  baseSalary:30000,
+//  overtime: 15,
+//  rate: 20,
+//  getWage(){
+//    return this.baseSalary + this.overtime * this.rate;
+//  }
+//}
+//employee.getWage();
+
+
+//const animal = {
+//  legs: 4,
+
+//}
+//const cat = Object.create(animal);
+//cat.name='Bob';
+//console.log(cat);
+
+//const animal = {
+//  eats: true,
+//}
+//const dog = Object.create(animal);
+//dog.barks = true;
+
+//for(const key in dog){
+//  if(!dog.hasOwnProperty(key)) continue
+//  console.log(key)
+//}
+
+const animal = {
+     eats: true,
   }
-  if( a.name > b.name){
-    return 1;
-  }
-  return 0;
-})
-console.log(arr);
+const dog = Object.create(animal);
+dog.barks = true;
+const keysDog = Object.keys(dog);
+console.log(keysDog);

@@ -555,38 +555,50 @@
 //})
 //console.log(c); 
 
-class User{
-  static Roles = {
-    ADMIN: 'admin',
-    USER: 'user',
-  }
-  #role
-  #mail
-  constructor({name, age, mail, role}){
-    this.name = name;
-    this.age = age;
-    this.#mail = mail;
-    this.role = role;
-  }
-  get role(){
-    return this.#role;
-  }
-  set role(newrole){
-    if(newrole === ""){
-      console.log("Error")
-      return;
-    }
-    this.#mail = newrole
-  }
+//class User{
+//  static Roles = {
+  //  ADMIN: 'admin',
+    //USER: 'user',
+  //}//
+//  #role
+//  #mail
+//  constructor({name, age, mail, role}){
+//    this.name = name;
+//    this.age = age;
+//    this.#mail = mail;
+//    this.role = role;
+//  }
+//  get role(){
+//    return this.#role;
+//  }
+//  set role(newrole){
+//    if(newrole === ""){
+//      console.log("Error")
+//      return;
+//    }
+ //   this.#mail = newrole
+ // }
  
-}
+//}
 
-const c = new User({
-  mail: 'newDavid@gmail.com',
-  role: User.Roles.ADMIN,
-});
-console.log(c.Roles);
-console.log(User.Roles);
-console.log(c.Roles);
-c.role = User.Roles.USER;
-console.log(c.role);
+//const c = new User({
+//  mail: 'newDavid@gmail.com',
+//  role: User.Roles.ADMIN,
+//});
+//console.log(c.Roles);
+//console.log(User.Roles);
+//console.log(c.Roles);
+//c.role = User.Roles.USER;
+//console.log(c.role);
+
+//element.querySelector(selector)
+//const item = document.querySelector('.list__item');
+//const listItems = document.querySelectorAll('.list__item');
+//console.log(listItems);
+
+const listWidth = 
+document.querySelector('#menu');
+listWidth.style.textTransform = 'uppercase';
+listWidth.style.fontSize = '26px';
+listWidth.style.color = 'tomato'
+console.log(listWidth)

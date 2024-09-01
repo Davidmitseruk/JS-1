@@ -39,13 +39,46 @@
 
 // btn.addEventListener('click', handleClick)
 
-function changeColor (button) {
-    const colors = ['red', 'blue', 'green', 'orange', 'black', 'brown'];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+// function changeColor (button) {
+//     const colors = ['red', 'blue', 'green', 'orange', 'black', 'brown'];
+//     const randomColor = colors[Math.floor(Math.random() * colors.length)];
+// 
+//     button.style.backgroundColor = randomColor;
+// }
 
-    button.style.backgroundColor = randomColor;
-}
+// function addAlert(){
+//     alert('hello')
+// }
 
-function addAlert(){
-    alert('hello')
-}
+// document.addEventListener("keydown", event => {
+//     console.log("keydown:", event);
+// }
+
+// )
+// document.addEventListener("keyup", event => {
+   // console.log("keyup:", event);
+// }
+
+// )
+
+// document.addEventListener("keydown", event => {
+//     console.log('key:', event.key);
+//     console.log('code:', event.code);
+// })
+
+// document.addEventListener("keydown", event => {
+//     event.preventDefault();
+
+// if((event.ctrlKey || event.altKey) && event.code === "KeyS"){
+//     console.log("ctrl+s or command+s")
+// }
+    
+// })
+
+const element = document.getElementById('mousedown-up')
+element.addEventListener('mousedown', () => {
+    element.textContent = 'mouse button clicked'
+});
+element.addEventListener('mouseup', () => {
+    element.textContent = 'mouse button realesed'
+})

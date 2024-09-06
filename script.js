@@ -596,9 +596,22 @@
 //const listItems = document.querySelectorAll('.list__item');
 //console.log(listItems);
 
-const listWidth = 
-document.querySelector('#menu');
-listWidth.style.textTransform = 'uppercase';
-listWidth.style.fontSize = '26px';
-listWidth.style.color = 'tomato'
-console.log(listWidth)
+//const listWidth = 
+//document.querySelector('#menu');
+//listWidth.style.textTransform = 'uppercase';
+//listWidth.style.fontSize = '26px';
+//listWidth.style.color = 'tomato'
+//console.log(listWidth)
+
+document.addEventListener('keydown', (event) => {
+  const cat = document.getElementById('box');
+  const step = 100;
+  let left = parseInt(window.getComputedStyle(cat).left)
+  if (event.key === 'ArrowLeft'){
+    cat.style.left = `${left - step}px`
+  }
+  else if (event.key === 'ArrowRight'){
+    cat.style.left = `${left - step}px`
+  }
+  
+})

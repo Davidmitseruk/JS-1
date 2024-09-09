@@ -603,15 +603,80 @@
 //listWidth.style.color = 'tomato'
 //console.log(listWidth)
 
-document.addEventListener('keydown', (event) => {
-  const cat = document.getElementById('box');
-  const step = 100;
-  let left = parseInt(window.getComputedStyle(cat).left)
-  if (event.key === 'ArrowLeft'){
-    cat.style.left = `${left - step}px`
-  }
-  else if (event.key === 'ArrowRight'){
-    cat.style.left = `${left - step}px`
-  }
+//document.addEventListener('keydown', (event) => {
+//  const cat = document.getElementById('box');
+//  const step = 100;
+//  let left = parseInt(window.getComputedStyle(cat).left)
+//  if (event.key === 'ArrowLeft'){
+//    cat.style.left = `${left - step}px`
+////  }
+ // else if (event.key === 'ArrowRight'){
+ //   cat.style.left = `${left - step}px`
+ //// }
   
-})
+//})
+
+//document.addEventListener('keydown', function(event){
+//  const element = document.getElementById('box');
+//  if (event.key === 'y'){
+//   element.style.backgroundColor = 'yellow';
+
+//  } else if (event.key === 'g'){
+//    element.style.backgroundColor = 'green';
+//  }else if (event.key === 'p'){
+//    element.style.backgroundColor = 'pink';
+//    
+//}
+//else if (event.key === 'b'){
+// element.style.backgroundColor = 'blue';}})
+
+//const links = document.querySelectorAll('ul li a')
+//links.forEach(link => {
+//  const href = link.getAttribute('href')
+//  if(href.startsWith('https:') || href.startsWith('http:') || href.startsWith('ftp:')){
+//    link.computedStyleMap.color = 'orange'
+//  }
+//})
+//if(links.length > 0){
+// links[0].classList.add('li_link');
+//  links[links.length = 1].classList.add['li_link']
+//}
+
+//const text = document.querySelector('h1')
+//text.textContent = 'Title';
+//text.classList.add('title')
+//text.style.color = 'red';
+//text.style.fontSize = '20px';
+
+//text.classList.replace('title', 'newTitle')
+
+
+//links.forEach(link => {
+//  if (link.classList.contains('list')){
+//    alert('contains class list');
+
+//  } else{
+//    alert('does not contain class list');
+// }
+//});
+
+//const array1 = [5, 10, 15, 20];
+//const array2 = [10, 20, 30];
+
+//const sumOne = array1.reduce((acc, num) => acc + num, 0)
+//const sumTwo = array2.reduce((acc, num) => acc + num, 0)
+//const total = sumOne + sumTwo
+//console.log(`totalsum = ${total}`)
+
+const products = [
+  {name: 'Macbook', price: 1000, category: 'Eletroniks', stock: 56},
+  {name: 'Iphone', price: 899, category: 'Eletroniks', stock: 30},
+  {name: 'Ipad', price: 699, category: 'Eletroniks', stock: 21},
+  {name: 'Airpods', price: 399, category: 'Eletroniks', stock: 67}
+]
+function calc(products, category){
+  return products.filter(product => product.category === category)
+  .reduce((total, product) => total + (product.price * product.stock), 0)
+}
+const totalValue = calc(products, 'Eletroniks');
+console.log(`Eletroniks = ${totalValue}`);

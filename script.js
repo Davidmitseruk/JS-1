@@ -603,18 +603,17 @@
 //listWidth.style.color = 'tomato'
 //console.log(listWidth)
 
-//document.addEventListener('keydown', (event) => {
-//  const cat = document.getElementById('box');
-//  const step = 100;
-//  let left = parseInt(window.getComputedStyle(cat).left)
-//  if (event.key === 'ArrowLeft'){
-//    cat.style.left = `${left - step}px`
-////  }
- // else if (event.key === 'ArrowRight'){
- //   cat.style.left = `${left - step}px`
- //// }
+document.addEventListener('keydown', (event) => {
+  const cat = document.getElementById('box');
+  const step = 100;
+  let left = parseInt(window.getComputedStyle(cat).left);
   
-//})
+  if (event.key === 'ArrowLeft') {
+    cat.style.left = `${left - step}px`;
+  } else if (event.key === 'ArrowRight') {
+    cat.style.left = `${left + step}px`;
+  }
+});
 
 //document.addEventListener('keydown', function(event){
 //  const element = document.getElementById('box');
@@ -668,15 +667,15 @@
 //const total = sumOne + sumTwo
 //console.log(`totalsum = ${total}`)
 
-const products = [
-  {name: 'Macbook', price: 1000, category: 'Eletroniks', stock: 56},
-  {name: 'Iphone', price: 899, category: 'Eletroniks', stock: 30},
-  {name: 'Ipad', price: 699, category: 'Eletroniks', stock: 21},
-  {name: 'Airpods', price: 399, category: 'Eletroniks', stock: 67}
-]
-function calc(products, category){
-  return products.filter(product => product.category === category)
-  .reduce((total, product) => total + (product.price * product.stock), 0)
-}
-const totalValue = calc(products, 'Eletroniks');
-console.log(`Eletroniks = ${totalValue}`);
+//const products = [
+//  {name: 'Macbook', price: 1000, category: 'Eletroniks', stock: 56},
+//  {name: 'Iphone', price: 899, category: 'Eletroniks', stock: 30},
+//  {name: 'Ipad', price: 699, category: 'Eletroniks', stock: 21},
+//  {name: 'Airpods', price: 399, category: 'Eletroniks', stock: 67}
+//]
+//function calc(products, category){
+// return products.filter(product => product.category === category)
+ // .reduce((total, product) => total + (product.price * product.stock), 0)
+//}
+//const totalValue = calc(products, 'Eletroniks');
+//console.log(`Eletroniks = ${totalValue}`);
